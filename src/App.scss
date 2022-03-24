@@ -1,0 +1,39 @@
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fafafa;
+
+    .calculator {
+        width: 320px;
+        border: 2px solid #47476b;
+        background: black;
+
+        .calculator-key {
+            width: 80px;
+            height: 65px;
+            background: #4d4d4d;
+            color: #fff;
+
+            &.key-operator {
+                background-color: #666666;
+            }
+
+            &.key-clear,
+            &.key-0 {
+                width: 160px;
+            }
+
+            &.key-clear {
+                background-color: #ac3939;
+            }
+
+            &.key-equals {
+                position: absolute;
+                height: 130px;
+                background-color: #004466;
+            }
+        }
+    }
+}
